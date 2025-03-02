@@ -71,6 +71,7 @@ int main(){
     //Printf exibe na tela todas as informações digitadas pelo usuário referente a carta 02
     printf("Carta 02: \n");
     printf("Nome do Estado: %s\n", estado2);
+    printf("Código da carta: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
     printf("População total: %d\n", populacao2);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos2);
