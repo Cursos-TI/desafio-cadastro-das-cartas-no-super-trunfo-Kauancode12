@@ -26,10 +26,11 @@ int main(){
     printf("PIB: \n");
     scanf("%f", &pib);
 
+    printf("Carta 01: \n");
     printf("Nome do Estado: %s\n", estado);
     printf("Nome da Cidade: %s\n", cidade);
     printf("População total: %d\n", populacao);
-    printf("Número de pontos turísticos: \n", pontos_turisticos);
+    printf("Número de pontos turísticos: %d\n", pontos_turisticos);
     printf("Área em km²: %f\n", area);
     printf("PIB total: %f\n", pib);
 
