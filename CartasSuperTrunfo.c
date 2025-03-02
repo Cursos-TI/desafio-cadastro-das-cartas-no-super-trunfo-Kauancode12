@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main(){
+
+    //Declara as variaveis
     char estado[30], estado2[30];
     char cidade[30], cidade2[30];
     int populacao, populacao2;
@@ -8,6 +10,7 @@ int main(){
     float area, area2;
     float pib, pib2;
 
+    //Função printf exibe na tela e scanf coleta as informações referente a carta 01
     printf("Carta 01: \n");
     printf("Estado: \n");
     scanf("%s", &estado);
@@ -27,6 +30,7 @@ int main(){
     printf("PIB: \n");
     scanf("%f", &pib);
 
+    //Função printf exibe na tela e scanf coleta as informações referentes a carta 02
     printf("Carta 02: \n");
     printf("Estado: \n");
     scanf("%s", &estado2);
@@ -46,6 +50,7 @@ int main(){
     printf("PIB: \n");
     scanf("%f", &pib2);
 
+    //Printf exibe na tela todas as informações digitadas pelo usuário referente a carta 01
     printf("Carta 01: \n");
     printf("Nome do Estado: %s\n", estado);
     printf("Nome da Cidade: %s\n", cidade);
@@ -54,6 +59,7 @@ int main(){
     printf("Área em km²: %f\n", area);
     printf("PIB total: %f\n", pib);
 
+    //Printf exibe na tela todas as informações digitadas pelo usuário referente a carta 02
     printf("Carta 02: \n");
     printf("Nome do Estado: %s\n", estado2);
     printf("Nome da Cidade: %s\n", cidade2);
@@ -61,6 +67,9 @@ int main(){
     printf("Número de pontos turísticos: %d\n", pontos_turisticos2);
     printf("Área em km²: %f\n", area2);
     printf("PIB total: %f\n", pib2);
+
+    //Esse programa funciona como um sistema simples de cadastro de cartas para um jogo
+
 
     return 0;
    
