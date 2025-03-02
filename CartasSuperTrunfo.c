@@ -14,13 +14,13 @@ int main(){
     //Função printf exibe na tela e scanf coleta as informações referente a carta 01
     printf("Carta 01: \n");
     printf("Estado: \n");
-    scanf("%s", &estado);
+    scanf("%s", estado);
 
     printf("Digite o código da carta: \n");
-    scanf("%s", &codigo);
+    scanf("%s", codigo);
 
     printf("Cidade: \n");
-    scanf("%s", &cidade);
+    scanf("%s", cidade);
 
     printf("População: \n");
     scanf("%d", &populacao);
@@ -47,13 +47,13 @@ int main(){
     //Função printf exibe na tela e scanf coleta as informações referentes a carta 02
     printf("Carta 02: \n");
     printf("Estado: \n");
-    scanf("%s", &estado2);
+    scanf("%s", estado2);
 
     printf("Digite o código da carta: \n");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
 
     printf("Cidade: \n");
-    scanf("%s", &cidade2);
+    scanf("%s", cidade2);
 
     printf("População: \n");
     scanf("%d", &populacao2);
