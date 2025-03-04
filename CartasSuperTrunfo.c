@@ -36,6 +36,7 @@ int main(){
     printf("PIB: \n");
     scanf("%f", &pib);
 
+    //Operações que forçam o resultado da divisão a adotar o tipo float
     densidade_populacional = (float)populacao / area;
 
     pib_per_capita = (float)pib / populacao;
@@ -75,6 +76,7 @@ int main(){
     printf("PIB: \n");
     scanf("%f", &pib2);
 
+    //Operações que forçam o resultado da divisão a adotar o tipo float
     densidade_populacional2 = (float)populacao2 / area2;
 
     pib_per_capita2 = (float)pib2 / populacao2;
