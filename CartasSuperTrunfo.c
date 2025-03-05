@@ -6,19 +6,20 @@ int main(){
     char estado[30], estado2[30];
     char codigo[30], codigo2[30];
     char cidade[30], cidade2[30];
-    int populacao, populacao2, resultado_populacao;
 
-    int pontos_turisticos, pontos_turisticos2, resultado_pontos_turisticos;
+    int populacao, populacao2; int resultado_populacao;
 
-    float area, area2, resultado_area;
+    int pontos_turisticos, pontos_turisticos2; int resultado_pontos_turisticos;
 
-    float pib, pib2, resultado_pib;
+    float area, area2; int resultado_area;
 
-    float densidade_populacional, densidade_populacional2, resultado_densidade_populacional;
+    float pib, pib2; int resultado_pib;
 
-    float pib_per_capita, pib_per_capita2, resultado_pib_per_capita;
+    float densidade_populacional, densidade_populacional2; int resultado_densidade_populacional;
 
-    float super_poder, super_poder2, resultado_super_poder;
+    float pib_per_capita, pib_per_capita2; int resultado_pib_per_capita;
+
+    float super_poder, super_poder2; int resultado_super_poder;
 
     //Função printf exibe na tela e scanf coleta as informações referente a carta 01
     printf("Carta 01: \n");
@@ -43,7 +44,7 @@ int main(){
     printf("PIB: \n");
     scanf("%f", &pib);
 
-    //Operações que forçam o resultado da divisão a adotar o tipo float
+    //Operações que declaram uma nova variavel a partir da divisão do valor de outras e forçam o resultado da divisão a adotar o tipo float
     densidade_populacional = (float)populacao / area;
 
     pib_per_capita = (float)pib / populacao;
@@ -61,7 +62,7 @@ int main(){
     printf("PIB total: %f\n", pib);
     printf("Densidade populacional: %.2f\n", densidade_populacional);
     printf("PIB per capita: %.2f\n", pib_per_capita);
-    printf("Super Poder: %.1f\n", super_poder);
+    printf("Super Poder: %.3f\n", super_poder);
 
     //Função printf exibe na tela e scanf coleta as informações referentes a carta 02
     printf("Carta 02: \n");
@@ -86,7 +87,7 @@ int main(){
     printf("PIB: \n");
     scanf("%f", &pib2);
 
-    //Operações que forçam o resultado da divisão a adotar o tipo float
+    //Operações que declaram uma nova variavel a partir da divisão do valor de outras e forçam o resultado da divisão a adotar o tipo float
     densidade_populacional2 = (float)populacao2 / area2;
 
     pib_per_capita2 = (float)pib2 / populacao2;
@@ -105,8 +106,9 @@ int main(){
     printf("PIB total: %f\n", pib2);
     printf("Densidade populacional: %.2f\n", densidade_populacional2);
     printf("PIB per capita: %.2f\n", pib_per_capita2);
-    printf("Super Poder: %.1f\n", super_poder2);
+    printf("Super Poder: %.3f\n", super_poder2);
 
+    //calcula o resultado das batalhas usando comparações
     resultado_populacao = populacao > populacao2;
     resultado_pontos_turisticos = pontos_turisticos > pontos_turisticos2;
     resultado_area = area > area2;
@@ -115,10 +117,19 @@ int main(){
     resultado_pib_per_capita = pib_per_capita > pib_per_capita2;
     resultado_super_poder = super_poder > super_poder2;
 
+    //printf exibe o resultado das batalhas das duas cartas
+    printf("A carta 01 tem a população maior que a carta 02: %d\n", resultado_populacao);
+    printf("A carta 01 tem mais pontos turísticos que a carta 02: %d\n", resultado_pontos_turisticos);
+    printf("A carta 01 tem a área maior que a carta 02: %d\n", resultado_area);
+    printf("A carta 01 tem o PIB maior que a carta 02: %d\n", resultado_pib);
+    printf("A carta 01 tem a densidade populacional menor que a carta 02: %d\n", resultado_densidade_populacional);
+    printf("A carta 01 tem o PIB per capita maior que a carta 02: %d\n", resultado_pib_per_capita);
+    printf("A carta 01 tem super poder maior que a carta 02: %d\n", resultado_super_poder);
 
 
 
-    //Esse programa funciona como um sistema simples de cadastro de cartas para um jogo
+
+    //Esse programa funciona como um jogo de cartas simples
 
 
     return 0;
