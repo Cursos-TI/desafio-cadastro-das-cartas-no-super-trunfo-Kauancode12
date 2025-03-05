@@ -12,6 +12,7 @@ int main(){
     float pib, pib2;
     float densidade_populacional, densidade_populacional2;
     float pib_per_capita, pib_per_capita2;
+    float super_poder, super_poder2;
 
     //Função printf exibe na tela e scanf coleta as informações referente a carta 01
     printf("Carta 01: \n");
@@ -41,6 +42,8 @@ int main(){
 
     pib_per_capita = (float)pib / populacao;
 
+    super_poder = (float)(populacao + area + pib + pontos_turisticos + pib_per_capita) + (1 / densidade_populacional);
+
     //Printf exibe na tela todas as informações digitadas pelo usuário referente a carta 01
     printf("Carta 01: \n");
     printf("Nome do Estado: %s\n", estado);
@@ -52,6 +55,7 @@ int main(){
     printf("PIB total: %f\n", pib);
     printf("Densidade populacional: %.2f\n", densidade_populacional);
     printf("PIB per capita: %.2f\n", pib_per_capita);
+    printf("Super Poder: %.1f\n", super_poder);
 
     //Função printf exibe na tela e scanf coleta as informações referentes a carta 02
     printf("Carta 02: \n");
@@ -81,6 +85,8 @@ int main(){
 
     pib_per_capita2 = (float)pib2 / populacao2;
 
+    super_poder2 = (float)(populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2) + (1 / densidade_populacional2);
+
 
     //Printf exibe na tela todas as informações digitadas pelo usuário referente a carta 02
     printf("Carta 02: \n");
@@ -93,6 +99,7 @@ int main(){
     printf("PIB total: %f\n", pib2);
     printf("Densidade populacional: %.2f\n", densidade_populacional2);
     printf("PIB per capita: %.2f\n", pib_per_capita2);
+    printf("Super Poder: %.1f\n", super_poder2);
 
     //Esse programa funciona como um sistema simples de cadastro de cartas para um jogo
 
