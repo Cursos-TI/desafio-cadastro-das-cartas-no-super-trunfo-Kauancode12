@@ -6,13 +6,19 @@ int main(){
     char estado[30], estado2[30];
     char codigo[30], codigo2[30];
     char cidade[30], cidade2[30];
-    int populacao, populacao2;
-    int pontos_turisticos, pontos_turisticos2;
-    float area, area2;
-    float pib, pib2;
-    float densidade_populacional, densidade_populacional2;
-    float pib_per_capita, pib_per_capita2;
-    float super_poder, super_poder2;
+    int populacao, populacao2, resultado_populacao;
+
+    int pontos_turisticos, pontos_turisticos2, resultado_pontos_turisticos;
+
+    float area, area2, resultado_area;
+
+    float pib, pib2, resultado_pib;
+
+    float densidade_populacional, densidade_populacional2, resultado_densidade_populacional;
+
+    float pib_per_capita, pib_per_capita2, resultado_pib_per_capita;
+
+    float super_poder, super_poder2, resultado_super_poder;
 
     //Função printf exibe na tela e scanf coleta as informações referente a carta 01
     printf("Carta 01: \n");
@@ -100,6 +106,17 @@ int main(){
     printf("Densidade populacional: %.2f\n", densidade_populacional2);
     printf("PIB per capita: %.2f\n", pib_per_capita2);
     printf("Super Poder: %.1f\n", super_poder2);
+
+    resultado_populacao = populacao > populacao2;
+    resultado_pontos_turisticos = pontos_turisticos > pontos_turisticos2;
+    resultado_area = area > area2;
+    resultado_pib = pib > pib2;
+    resultado_densidade_populacional = densidade_populacional < densidade_populacional2;
+    resultado_pib_per_capita = pib_per_capita > pib_per_capita2;
+    resultado_super_poder = super_poder > super_poder2;
+
+
+
 
     //Esse programa funciona como um sistema simples de cadastro de cartas para um jogo
 
