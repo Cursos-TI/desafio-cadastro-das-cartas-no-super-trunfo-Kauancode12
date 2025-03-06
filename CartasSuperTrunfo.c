@@ -108,7 +108,7 @@ int main(){
     printf("PIB per capita: %.2f\n", pib_per_capita2);
     printf("Super Poder: %.3f\n", super_poder2);
 
-    //calcula o resultado das batalhas usando comparações
+    //compara os valores e indica quem venceu por meio de uma condição estabelecida
     if(populacao > populacao2){
         printf("População: %d x %d carta 1 venceu\n", populacao, populacao2);
     }else{
