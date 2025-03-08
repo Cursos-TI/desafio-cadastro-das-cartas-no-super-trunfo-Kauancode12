@@ -122,21 +122,23 @@ int main(){
     switch(escolhaJogador)
     {
     case 1:
+
     if(populacao > populacao2){
         printf("População: %d x %d carta 1 venceu\n", populacao, populacao2);
     } else if (populacao < populacao2){
         printf("População: %d x %d carta 2 venceu\n", populacao, populacao2);
     } else {
-        printf("EMPATE!");
+        printf("EMPATE!\n");
     }
-        break;
+    break;
     case 2:
+
     if(pontos_turisticos > pontos_turisticos2){
         printf("Pontos turísticos: %d x %d carta 1 venceu\n", pontos_turisticos, pontos_turisticos2);
     } else if (pontos_turisticos < pontos_turisticos2){
         printf("Pontos turísticos: %d x %d carta 2 venceu\n", pontos_turisticos, pontos_turisticos2);
     } else {
-        printf("EMPATE!");
+        printf("EMPATE!\n");
     }
     break;
     case 3:
@@ -145,31 +147,51 @@ int main(){
     } else if (area < area2){
         printf("Área em km²: %f x %f carta 2 venceu\n", area, area2);
     } else {
-        printf("EMPATE!");
+        printf("EMPATE!\n");
     }
+    break;
+    case 4:
 
     if(pib > pib2){
         printf("PIB: %f x %f carta 1 venceu\n", pib, pib2);
-    }else{
+    } else if (pib < pib2){
         printf("PIB: %f x %f carta 2 venceu\n", pib, pib2);
+    } else {
+        printf("EMPATE!\n");
     }
+    break;
+    case 5:
 
     if(densidade_populacional < densidade_populacional2){
         printf("Densidade populacional: %f x %f carta 1 venceu\n", densidade_populacional, densidade_populacional2);
-    }else{
+    } else if (densidade_populacional > densidade_populacional2){
         printf("Densidade populacional: %f x %f carta 2 venceu\n", densidade_populacional, densidade_populacional2);
+    } else{
+        printf("EMPATE!\n");
     }
+    break;
+    case 6:
 
     if(pib_per_capita > pib_per_capita2){
         printf("PIB per capita: %f x %f carta 1 venceu\n", pib_per_capita, pib_per_capita2);
-    }else{
+    } else if (pib_per_capita < pib_per_capita2){
         printf("PIB per capita: %f x %f carta 2 venceu\n", pib_per_capita, pib_per_capita2);
+    } else {
+        printf("EMPATE!\n");
     }
+    break;
+    case 7:
 
     if(super_poder > super_poder2){
         printf("Superpoder: %f x %f carta 1 venceu\n", super_poder, super_poder2);
-    }else{
+    } else if (super_poder < super_poder2){
         printf("Superpoder: %f x %f carta 2 venceu\n", super_poder, super_poder2);
+    } else {
+        printf("EMPATE!\n");
+    }
+    break;
+    default:
+    printf("Opção inválida\n");
     }
 
     //Esse programa funciona como um jogo de cartas simples
