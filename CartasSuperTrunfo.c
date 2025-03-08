@@ -124,30 +124,30 @@ int main(){
     case 1:
 
     if(populacao > populacao2){
-        printf("População: %d x %d carta 1 venceu\n", populacao, populacao2);
+        printf("Cidade: %s x %s\nPopulação: %d x %d carta 1 venceu\n", cidade, cidade2, populacao, populacao2);
     } else if (populacao < populacao2){
-        printf("População: %d x %d carta 2 venceu\n", populacao, populacao2);
+        printf("Cidade: %s x %s\nPopulação: %d x %d carta 2 venceu\n", cidade, cidade2, populacao, populacao2);
     } else {
-        printf("EMPATE!\n");
+        printf("Cidade: %s x %s\nPopulação: %d x %d EMPATE!\n", cidade, cidade2, populacao, populacao2);
     }
     break;
     case 2:
 
     if(pontos_turisticos > pontos_turisticos2){
-        printf("Pontos turísticos: %d x %d carta 1 venceu\n", pontos_turisticos, pontos_turisticos2);
+        printf("Cidade: %s x %s\nPontos turísticos: %d x %d carta 1 venceu\n", cidade, cidade2, pontos_turisticos, pontos_turisticos2);
     } else if (pontos_turisticos < pontos_turisticos2){
-        printf("Pontos turísticos: %d x %d carta 2 venceu\n", pontos_turisticos, pontos_turisticos2);
+        printf("Cidade: %s x %s\nPontos turísticos: %d x %d carta 2 venceu\n", cidade, cidade2, pontos_turisticos, pontos_turisticos2);
     } else {
-        printf("EMPATE!\n");
+        printf("Cidade: %s x %s\nPontos turísticos: %d x %d EMPATE!\n", cidade, cidade2, pontos_turisticos, pontos_turisticos2);
     }
     break;
     case 3:
     if(area > area2){
-        printf("Área em km²: %f x %f carta 1 venceu\n", area, area2);
+        printf("Cidade: %s x %s\nÁrea em km²: %f x %f carta 1 venceu\n", cidade, cidade2, area, area2);
     } else if (area < area2){
-        printf("Área em km²: %f x %f carta 2 venceu\n", area, area2);
+        printf("Cidade: %s x %s\nÁrea em km²: %f x %f carta 2 venceu\n", cidade, cidade2, area, area2);
     } else {
-        printf("EMPATE!\n");
+        printf("Cidade: %s x %s\nÁrea em km²: %f x %f EMPATE!\n", cidade, cidade2, area, area2);
     }
     break;
     case 4:
