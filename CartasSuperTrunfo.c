@@ -7,7 +7,7 @@ int main(){
     char codigo[30], codigo2[30];
     char cidade[30], cidade2[30];
 
-    int populacao, populacao2;
+    int populacao, populacao2; int escolhaJogador;
 
     int pontos_turisticos, pontos_turisticos2;
 
@@ -108,23 +108,44 @@ int main(){
     printf("PIB per capita: %.2f\n", pib_per_capita2);
     printf("Super Poder: %.3f\n", super_poder2);
 
+    printf("Escolha o atributo para comparação\n");
+    printf("1.Populção\n");
+    printf("2.pontos turísticos\n");
+    printf("3.Área em km²\n");
+    printf("4.PIB\n");
+    printf("5.Densidade populacional\n");
+    printf("6.PIB per capita\n");
+    printf("7.Superpoder\n");
+    scanf("%d", &escolhaJogador);
+
     //compara os valores e indica quem venceu por meio de uma condição estabelecida
+    switch(escolhaJogador)
+    {
+    case 1:
     if(populacao > populacao2){
         printf("População: %d x %d carta 1 venceu\n", populacao, populacao2);
-    }else{
+    } else if (populacao < populacao2){
         printf("População: %d x %d carta 2 venceu\n", populacao, populacao2);
+    } else {
+        printf("EMPATE!");
     }
-
+        break;
+    case 2:
     if(pontos_turisticos > pontos_turisticos2){
         printf("Pontos turísticos: %d x %d carta 1 venceu\n", pontos_turisticos, pontos_turisticos2);
-    }else{
+    } else if (pontos_turisticos < pontos_turisticos2){
         printf("Pontos turísticos: %d x %d carta 2 venceu\n", pontos_turisticos, pontos_turisticos2);
+    } else {
+        printf("EMPATE!");
     }
-
+    break;
+    case 3:
     if(area > area2){
         printf("Área em km²: %f x %f carta 1 venceu\n", area, area2);
-    }else{
+    } else if (area < area2){
         printf("Área em km²: %f x %f carta 2 venceu\n", area, area2);
+    } else {
+        printf("EMPATE!");
     }
 
     if(pib > pib2){
@@ -151,19 +172,7 @@ int main(){
         printf("Superpoder: %f x %f carta 2 venceu\n", super_poder, super_poder2);
     }
 
-
-
-    
-
-
-
-
     //Esse programa funciona como um jogo de cartas simples
 
-
     return 0;
-   
-
-
-
 }
