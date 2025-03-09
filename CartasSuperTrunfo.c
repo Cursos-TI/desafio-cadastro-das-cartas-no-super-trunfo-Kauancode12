@@ -3,17 +3,17 @@
 int main(){
 
     //Declara as variaveis
-    char estado[30], estado2[30];
-    char codigo[30], codigo2[30];
-    char cidade[30], cidade2[30];
+    char estado[10] = "RJ", estado2[10] = "SP";
+    char codigo[5] = "A01", codigo2[5] = "B01";
+    char cidade[20] = "Rio de Janeiro", cidade2[20] = "São Paulo";
 
-    int populacao, populacao2; int escolhaJogador;
+    unsigned long int populacao = 3500000, populacao2 = 4000000; int escolhaJogador;
 
-    int pontos_turisticos, pontos_turisticos2;
+    int pontos_turisticos = 30, pontos_turisticos2 = 15;
 
-    float area, area2;
+    float area = 2500000, area2 = 2800000;
 
-    float pib, pib2;
+    float pib = 1500000000, pib2 = 1400000000;
 
     float densidade_populacional, densidade_populacional2;
 
@@ -21,29 +21,7 @@ int main(){
 
     float super_poder, super_poder2;
 
-    //Função printf exibe na tela e scanf coleta as informações referente a carta 01
-    printf("Carta 01: \n");
-    printf("Estado: \n");
-    scanf("%s", estado);
-
-    printf("Digite o código da carta: \n");
-    scanf("%s", codigo);
-
-    printf("Cidade: \n");
-    scanf("%s", cidade);
-
-    printf("População: \n");
-    scanf("%d", &populacao);
-
-    printf("Número de pontos turísticos: \n");
-    scanf("%d", &pontos_turisticos);
-
-    printf("Área em km²: \n");
-    scanf("%f", &area);
-
-    printf("PIB: \n");
-    scanf("%f", &pib);
-
+    
     //Operações que declaram uma nova variavel a partir da divisão do valor de outras e forçam o resultado da divisão a adotar o tipo float
     densidade_populacional = (float)populacao / area;
 
@@ -51,41 +29,20 @@ int main(){
 
     super_poder = (float)(populacao + area + pib + pontos_turisticos + pib_per_capita) + (1 / densidade_populacional);
 
-    //Printf exibe na tela todas as informações digitadas pelo usuário referente a carta 01
+    //Printf exibe na tela todas as informações referente a carta 01
     printf("Carta 01: \n");
     printf("Nome do Estado: %s\n", estado);
     printf("Código da carta: %s\n", codigo);
     printf("Nome da Cidade: %s\n", cidade);
-    printf("População total: %d\n", populacao);
+    printf("População total: %lu\n", populacao);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
     printf("Área em km²: %f\n", area);
     printf("PIB total: %f\n", pib);
     printf("Densidade populacional: %.2f\n", densidade_populacional);
     printf("PIB per capita: %.2f\n", pib_per_capita);
-    printf("Super Poder: %.3f\n", super_poder);
+    printf("Super Poder: %.3f\n\n", super_poder);
 
-    //Função printf exibe na tela e scanf coleta as informações referentes a carta 02
-    printf("Carta 02: \n");
-    printf("Estado: \n");
-    scanf("%s", estado2);
-
-    printf("Digite o código da carta: \n");
-    scanf("%s", codigo2);
-
-    printf("Cidade: \n");
-    scanf("%s", cidade2);
-
-    printf("População: \n");
-    scanf("%d", &populacao2);
-
-    printf("Número de pontos turísticos: \n");
-    scanf("%d", &pontos_turisticos2);
-
-    printf("Área em km²: \n");
-    scanf("%f", &area2);
-
-    printf("PIB: \n");
-    scanf("%f", &pib2);
+    
 
     //Operações que declaram uma nova variavel a partir da divisão do valor de outras e forçam o resultado da divisão a adotar o tipo float
     densidade_populacional2 = (float)populacao2 / area2;
@@ -95,18 +52,18 @@ int main(){
     super_poder2 = (float)(populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2) + (1 / densidade_populacional2);
 
 
-    //Printf exibe na tela todas as informações digitadas pelo usuário referente a carta 02
+    //Printf exibe na tela todas as informações referente a carta 02
     printf("Carta 02: \n");
     printf("Nome do Estado: %s\n", estado2);
     printf("Código da carta: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
-    printf("População total: %d\n", populacao2);
+    printf("População total: %lu\n", populacao2);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos2);
     printf("Área em km²: %f\n", area2);
     printf("PIB total: %f\n", pib2);
     printf("Densidade populacional: %.2f\n", densidade_populacional2);
     printf("PIB per capita: %.2f\n", pib_per_capita2);
-    printf("Super Poder: %.3f\n", super_poder2);
+    printf("Super Poder: %.3f\n\n", super_poder2);
 
     printf("Escolha o atributo para comparação\n");
     printf("1.População\n");
@@ -125,11 +82,11 @@ int main(){
     case 1:
 
     if(populacao > populacao2){
-        printf("Cidades: %s x %s\n População: %d x %d carta 1 venceu\n", cidade, cidade2, populacao, populacao2);
+        printf("Cidades: %s x %s\n População: %lu x %lu carta 1 venceu\n", cidade, cidade2, populacao, populacao2);
     } else if (populacao < populacao2){
-        printf("Cidades: %s x %s\n População: %d x %d carta 2 venceu\n", cidade, cidade2, populacao, populacao2);
+        printf("Cidades: %s x %s\n População: %lu x %lu carta 2 venceu\n", cidade, cidade2, populacao, populacao2);
     } else {
-        printf("Cidades: %s x %s\n População: %d x %d EMPATE!\n", cidade, cidade2, populacao, populacao2);
+        printf("Cidades: %s x %s\n População: %lu x %lu EMPATE!\n", cidade, cidade2, populacao, populacao2);
     }
     break;
     case 2:
